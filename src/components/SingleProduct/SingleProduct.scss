@@ -1,0 +1,65 @@
+@import "../../Styles/app.scss";
+.singleProduct {
+    height: 100vh;
+  background-color: $lightGray;
+  .singleProduct_header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+
+    .singleProduct_header_btns {
+      padding: 20px 20px;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .singleProduct_header_btns_btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $brown;
+        color: $lightGray;
+        @include flex(row, center, center);
+      }
+    }
+  }
+  .singleProduct_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    .singleProduct_body_title {
+      color: $red;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 5px 0px;
+      font-family: $family;
+    }
+    .singleProduct_body_calories {
+      background-color: $brown;
+      color: $lightGray;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px 0px;
+      font-family: $family;
+      @include flex(row, center, center);
+    }
+    .singleProduct_body_description {
+      color: $red;
+      margin: 5px 0px;
+      font-family: $family;
+    }
+    .singleProduct_body_price {
+      background-color: $brown;
+      color: $lightGray;
+      padding: 5px 10px;
+      margin: 5px 0px;
+      font-family: $family;
+      border-radius: 20px;
+      @include flex(row, center, center);
+    }
+  }
+}

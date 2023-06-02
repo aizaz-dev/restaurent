@@ -1,0 +1,54 @@
+@import "../../Styles/app.scss";
+.product_container_category_title {
+  color: $brown;
+  font-size: 20px;
+  font-family: $family;
+  text-align: end;
+
+}
+.product_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+  .product_container_image {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    min-width: 64px;
+    
+  }
+  .product_container_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .product_container_right_title {
+      color: $brown;
+      font-family: $family;
+      font-weight: 600;
+    }
+    .product_container_right_others {
+      display: flex;
+      color: $brown;
+      font-size: 12px;
+      font-family: $family;
+      align-items: center;
+      gap: 6px;
+      .product_container_right_calories {
+        font-weight: 600;
+      }
+      .product_container_right_price {
+        background-color: $brown;
+        color: $lightGray;
+        border-radius: 5px;
+        padding: 6px;
+      }
+    }
+    .product_container_right_des {
+      font-size: 10px;
+      color: $brown;
+      font-family: $family;
+    }
+  }
+}

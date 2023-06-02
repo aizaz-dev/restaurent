@@ -1,0 +1,34 @@
+@import "../../Styles/app.scss";
+.header {
+  background-image: url(../../assets/remal_alalkhalij_-_sp.moodhotmail.com_16832134960959588.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  .profile_image {
+    width: 50px;
+    height: 50px;
+    background-color: $brown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    .profile_image_el {
+      font-size: 22px;
+      color: $white;
+    }
+  }
+  .head_image_bottom {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
